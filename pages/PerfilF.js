@@ -5,7 +5,7 @@ export default function Flavia () {
     return (
         <View style={styles.container}>
             <Image style={styles.imagem} source={require('./../assets/eu.jpg')}/>
-            <Text style={styles.nome}>Flavia Regina Alexandre Mendes</Text>
+            <Text style={styles.nome}>Flavia Regina Alexandre Mendes - TDS1</Text>
             <StatusBar style='auto'/>
         </View>
     );

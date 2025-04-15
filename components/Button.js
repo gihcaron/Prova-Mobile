@@ -9,7 +9,6 @@ export default function Flavia ({ text }) {
     );
 }
 
-
 const styles = StyleSheet.create({
     button: {
         backgroundColor: "#333",
