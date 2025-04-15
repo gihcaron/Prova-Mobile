@@ -1,27 +1,34 @@
 
 import { StyleSheet, Text, Image, View, TouchableOpacity } from "react-native";
 import { TextInput } from "react-native-web";
-import { Card } from '../components/Card';
+import { Card } from '../components/Card'; 
 
 export default function Amanda(){
     return(
         <View style={styles.container}>
             <Text style={styles.title}>BLABLBLABLABLA</Text>
-            <Image source={require('./../assets/brazil.jpg')}
-            style={styles.brazil}/>
-            <Image source={require('./../assets/italy.jpg')}
-            style={styles.italy}/>
 
-            <TextInput placeholder="asdjfcnke" style={styles.input}></TextInput>
+            <Image source={require('./../assets/brazil.jpg')}
+            style={styles.Image}/>
+            <Image source={require('./../assets/italy.jpg')}
+            style={styles.Image}/>
+           
+
+            <TextInput placeholder="Pesquisar" style={styles.input}></TextInput>
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>Clique aqui</Text>
             </TouchableOpacity>
+
+            <div>
+                <div className={styles.cards}>
+                <Card title="Card 1" description="primeiro" />
+                <Card title="Card 2" description="segundo" />
+                <Card title="Card 3" description="terceiro" />
+                </div>
+
+            </div>
+
         </View>
-
-//COMPONENTES
-
-        
-
 
 
     );
@@ -29,68 +36,63 @@ export default function Amanda(){
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: "red",
+        backgroundColor: "white",
+        width: '100%',
+        height: '100%',
     },
 
-    brazil: {
+    Image: {
+        display: 'flex',
         width: 200,
         height: 200,
         borderRadius: 50,
     },
 
     italy: {
+        display: 'flex',
         width: 200,
         height: 200,
         borderRadius: 50,
     },
 
     title:{
-        fontSize: 20,
+        fontSize: 30,
         textAlign: "center",
+        fontWeight: "bold",
     },
 
     input:{
-        width: '80%',
+        width: '50%',
         height:40,
-        borderRadius: 5,
-        paddingHorizontal: 10,
-        marginBottom: 20,
-        backgroundColor: 'yellow'
+        borderRadius: 50,
+        paddingHorizontal: 5,
+        backgroundColor: 'gray',
+        color: 'black',
+        marginTop: 10,
+        marginLeft: 5,
     },
 
     button:{
-        backgroundColor: 'purple',
+        backgroundColor: 'pink',
         padding: 10,
         borderRadius: 50,
         alignItems: 'center',
         marginTop: 10,
+        cursor: 'pointer',
+        width: '30%',
+        marginBottom: 10,
     },
 
     buttonText:{
-        color: "blue",
+        color: "white",
         fontSize: 16,
         fontWeight: "bold",
     },
 
-});
+    cards:{
+        padding: 16,
+        margin: 8,
+        border: '1px solid #ddd',
+    },
 
-import { StatusBar } from 'expo-status-bar';
- import { StyleSheet, Text, View } from 'react-native';
- 
- export default function App() {
-   return (
-     <View style={styles.container}>
-       <Text>Open up App.js to start working on your app!</Text>
-       <StatusBar style="auto" />
-     </View>
-   );
- }
- 
- const styles = StyleSheet.create({
-   container: {
-     flex: 1,
-     backgroundColor: '#fff',
-     alignItems: 'center',
-     justifyContent: 'center',
-   },
- });
+});
