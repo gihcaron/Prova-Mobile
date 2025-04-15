@@ -9,6 +9,8 @@ import Amanda from './../pages/Amanda';
 import Anaju from './../pages/AnaJu';
 import Julia from './../pages/Julia';
 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigator() {
