@@ -3,17 +3,17 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Flavia from './pages/Flavia';
-import Giovanna from './pages/Giovanna';
-import Amanda from './pages/Amanda';
-import Anaju from './pages/AnaJu';
-import Julia from './pages/Julia';
+import Flavia from './../pages/Flavia'
+import Giovanna from './../pages/Giovanna';
+import Amanda from './../pages/Amanda';
+import Anaju from './../pages/AnaJu';
+import Julia from './../pages/Julia';
 
 const Tab = createBottomTabNavigator();
 
- export default function TabNavigator() {
-  return (
-   <Tab.Navigator initialRouteName='Flavia'>
+export default function TabNavigator() {
+    return (
+<Tab.Navigator initialRouteName='Flavia'>
     
         
         <Tab.Screen
@@ -67,7 +67,7 @@ const Tab = createBottomTabNavigator();
             ),
         }}/>
 
-       
+    
     </Tab.Navigator>
     
   );
