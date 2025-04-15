@@ -6,12 +6,17 @@ import {
     TouchableOpacity,
  } from 'react-native';
 
- const Categorias = ({Icon, Categoria}) => {
+ const Categorias = ({Title, Text}) => {
     return (
-       <TouchableOpacity style={styles.ContainerCategorias}>
-                   <Text style={ styles.icon}>{Icon}</Text>
-                   <Text style={ styles.text}>{Categoria}</Text>
-        </TouchableOpacity>
+     <View style={styles.textArea}>
+               <Text style={styles.AreaTitle}>
+                  {Title}
+               </Text>
+   
+               <Text style={styles.AreaText}>
+                 {Text}
+               </Text>
+      </View> 
     )
  }
 
