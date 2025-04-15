@@ -1,12 +1,16 @@
 import React from "react";
-import { StyleSheet, Text, View, FlatList, SafeAreaView, ScrollView, BackHandler } from "react-native";
+import { StyleSheet, Text, View, FlatList, SafeAreaView, ScrollView } from "react-native";
 
-export default function Julinha() {
+export default function Julia() {
     const data = [
         { id: '1', name: 'Julinha' },
         { id: '2', name: 'Simões' },
         { id: '3', name: 'Neves' },
         { id: '4', name: 'Teste' },
+        { id: '5', name: 'Julinha' },
+        { id: '6', name: 'Simões' },
+        { id: '7', name: 'Neves' },
+        { id: '8', name: 'Teste' },
     ]
 
     const renderItem = ({ item }) => (
@@ -61,8 +65,22 @@ const styles = StyleSheet.create({
             width: 0,
             height: 2,
         },
-
-    }
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+        elevation: 3,
+    },
+    name: {
+        fontSize: 19,
+        fontWeight: '600',
+        color: "#333",
+    },
+    FlatList: {
+        width: '100%',
+        marginTop: 10,
+    },
+    text: {
+        fontSize: 16,
+        color: "#333",
+    },
 
 })
-
