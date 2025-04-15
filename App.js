@@ -11,4 +11,7 @@ export default function App() {
             <Tab/>
         </NavigationContainer>
     );
+
 }
+
+
