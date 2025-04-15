@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, FlatList, SafeAreaView, ScrollView, BackHandler } from "react-native";
 
-export default function App() {
+export default function Julinha() {
     const data = [
         { id: '1', name: 'Julinha' },
         { id: '2', name: 'Simões' },
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
     bloco: {
         backgroundColor: 'pink',
-        padding: 15,
+        padding: 14,
         marginVertical: 8,
         borderRadius: 8,
         alignItems: "center",
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
             width: 0,
             height: 2,
         },
-        
+
     }
 
 })
